@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="src/css/output.css" />
         <link rel="stylesheet" href="./src/css/main.css" />
     </head>
-    <body class="font-poppins">
+    <body class="font-poppins bg-gray-50">
         <nav id="navbar" class="fixed start-0 top-0 z-20 w-full border-gray-200 bg-transparent transition-all duration-1000">
             <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-3">
                 <a href="index.html" class="flex items-center space-x-3">
@@ -38,7 +38,7 @@
                 <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                     <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0">
                         <li>
-                            <a href="index.html" class="nav-active block rounded-sm px-3 py-2 tracking-wider md:p-0" aria-current="page">Beranda</a>
+                            <a href="index.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:p-0">Beranda</a>
                         </li>
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex w-full items-center justify-between rounded-sm px-3 py-2 tracking-wider text-gray-900 md:w-auto md:border-0 md:p-0 md:hover:text-blue-800">
@@ -69,106 +69,86 @@
                             <a href="struktur-organisasi.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0">Struktur Organisasi</a>
                         </li>
                         <li>
-                            <a href="berita.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0">Berita</a>
+                            <a href="berita.html" class="nav-active block rounded-sm px-3 py-2 tracking-wider md:border-0 md:p-0" aria-current="page">Berita</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <section class="bg-blue-50">
-            <div class="container mx-auto">
-                <section class="grid h-screen grid-cols-1 items-center justify-center gap-0 px-5 pt-14 md:grid-cols-2 md:px-20 md:pt-0" style="background-image: url(&quot;src/img/bg.png&quot;)">
-                    <div class="font-montserrat" data-aos="fade-down">
-                        <h2 class="text-base font-bold text-gray-800 md:text-xl">PK PMII AMIK Taruna Probolinggo</h2>
-                        <h1 id="typing" class="mt-2 text-3xl font-bold tracking-wide text-yellow-400 md:text-4xl"></h1>
-                        <p class="mt-4 text-sm text-gray-700 md:text-base">Tanpa kecintaan yang tulus, tak akan lahir semangat juang yang membara. PK PMII Amik Taruna terus melangkah maju bukan hanya karena sekadar janji, tetapi karena adanya dedikasi, loyalitas, dan komitmen yang kuat dari setiap kadernya.</p>
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="./src/img/image.png" alt="Mahasiswa PMII" class="h-[300px] max-w-full md:h-[400px]" data-aos="fade-down" />
-                    </div>
-                </section>
-            </div>
-        </section>
+        <div class="container mx-auto mt-20 px-2 py-7 md:px-6">
+            <div class="flex flex-col gap-8 md:flex-row">
+                <!-- Konten Berita -->
+                <div class="overflow-hidden rounded-lg bg-white p-5 shadow-lg md:w-2/3 md:p-8">
+                    <!-- Judul Berita -->
+                    <h1 class="mb-4 text-xl font-bold text-gray-800 md:text-3xl">Pelantikan Pengurus Baru PMII Cabang Bogor</h1>
 
-        <section class="bg-gray-50">
-            <div class="container mx-auto py-10 md:py-0">
-                <section class="grid min-h-screen grid-cols-1 items-center justify-center px-5 md:grid-cols-2">
-                    <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in-up">
-                        <img src="./src/img/img-1.jpg" alt="PMII" class="w-full transition-all duration-500 hover:scale-105 hover:shadow-inner" />
+                    <!-- Tanggal dan Penulis -->
+                    <div class="mb-6 flex items-center text-sm text-gray-500">
+                        <span class="mr-4 text-xs md:text-base">15 Oktober 2023</span>
+                        <span class="text-xs md:text-base">Oleh: Admin PMII</span>
                     </div>
-                    <div class="px-0 pt-10 md:px-10 md:pt-0" data-aos="zoom-in-up">
-                        <h2 class="mb-3 text-xl font-bold text-gray-900 md:text-2xl">Pergerakan Mahasiswa Islam Indonesia</h2>
-                        <p class="mb-4 text-justify text-sm text-gray-600">PMII merupakan organisasi gerakan dan kaderisasi yang berlandaskan Islam Ahlussunah waljamaah. Berdiri sejak tanggal 17 April 1960 di Surabaya dan hingga lebih dari setengah abad ini PMII terus eksis untuk memberikan kontribusi bagi kemajuan bangsa dan negara.</p>
 
-                        <div class="mb-4 flex items-start gap-3">
-                            <div class="flex h-10 items-center justify-center rounded-full bg-blue-800 p-3 text-white">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-800">Tujuan PMII</h3>
-                                <p class="text-justify text-sm text-gray-600">Terbentuknya pribadi muslim Indonesia yang bertakwa kepada Allah Swt. Berakhlak, berilmu, cakap, dan bertanggung jawab dalam mengamalkan ilmunya serta komitmen memperjuangkan cita-cita kemerdekaan Indonesia.</p>
-                            </div>
-                        </div>
+                    <!-- Gambar Berita -->
+                    <img src="src/img/berita-1.jpg" alt="Gambar Berita" class="mb-6 h-80 w-full rounded-lg object-cover" />
 
-                        <!-- Kolaborasi PMII -->
-                        <div class="flex items-start gap-3">
-                            <div class="flex h-10 items-center justify-center rounded-full bg-blue-800 p-3 text-white">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-800">Kolaborasi PMII</h3>
-                                <p class="text-justify text-sm text-gray-600">PMII AMK Tanura Probolinggo berkomitmen membangun sinergi dalam pengembangan keilmuan dan gerakan sosial. Melalui kolaborasi, kami mencetak kader unggul yang siap mengabdi.</p>
-                            </div>
-                        </div>
+                    <!-- Isi Berita -->
+                    <div class="leading-relaxed text-gray-700">
+                        <p class="mb-4">Pelantikan pengurus baru PMII Cabang Bogor telah dilaksanakan pada tanggal 15 Oktober 2023. Acara ini dihadiri oleh berbagai tokoh masyarakat dan mahasiswa. Pelantikan ini menandai dimulainya periode kepengurusan baru yang akan fokus pada peningkatan kualitas kader dan pengabdian masyarakat.</p>
+                        <p class="mb-4">Acara pelantikan dibuka dengan sambutan dari Ketua PMII Cabang Bogor periode sebelumnya, yang menyampaikan apresiasi atas kerja keras pengurus lama dan harapan untuk pengurus baru. Selanjutnya, pengurus baru dilantik secara resmi oleh Ketua Dewan Pembina PMII Cabang Bogor.</p>
+                        <p class="mb-4">Dalam sambutannya, Ketua PMII Cabang Bogor yang baru, Muhammad Abdullah Syukri, menyampaikan visi dan misi kepengurusan baru. Beliau menekankan pentingnya kolaborasi antar-kader dan peningkatan program yang berdampak langsung pada masyarakat.</p>
                     </div>
-                </section>
-            </div>
-        </section>
+                </div>
 
-        <section class="my-10 bg-gradient-to-tr from-blue-600 to-indigo-800">
-            <div class="container mx-auto py-10">
-                <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-3">
-                    <!-- 1 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-person-walking text-2xl"></i>
+                <!-- Sidebar Kategori Berita -->
+                <div class="overflow-hidden rounded-lg bg-white p-6 shadow-lg md:w-1/3">
+                    <h2 class="mb-4 text-xl font-semibold text-gray-800">Kategori Berita</h2>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Kaderisasi</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Kegiatan Sosial</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Seminar & Workshop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Berita Nasional</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 underline hover:text-blue-600">Pengabdian Masyarakat</a>
+                        </li>
+                    </ul>
+
+                    <!-- Rekomendasi Berita -->
+                    <h2 class="mt-8 mb-4 text-xl font-semibold text-gray-800">Berita Terkait</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <img src="src/img/berita-2.jpg" alt="Berita 1" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Workshop Kaderisasi PMII 2023</a>
+                                <p class="text-xs text-gray-500 md:text-sm">10 Oktober 2023</p>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Pergerakan</h3>
-                        <p class="mt-3 text-sm text-gray-600">Keadilan, Kemajuan, Kemanusiaan: Landasan Perjuangan PK PMII ATP Menuju Masa Depan yang Berkeadilan.</p>
-                    </div>
-                    <!-- 2 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-person-lines-fill text-2xl"></i>
+                        <div class="flex items-center">
+                            <img src="src/img/berita-3.jpg" alt="Berita 2" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Seminar Nasional Kebangsaan</a>
+                                <p class="text-xs text-gray-500 md:text-sm">5 Oktober 2023</p>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Kaderisasi</h3>
-                        <p class="mt-3 text-sm text-gray-600">Membangun generasi muda yang berintegritas, berakhlak, dan memiliki wawasan kebangsaan demi kemajuan umat.</p>
-                    </div>
-                    <!-- 3 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-book text-2xl"></i>
+                        <div class="flex items-center">
+                            <img src="src/img/berita-4.jpg" alt="Berita 2" class="h-12 w-20 rounded-lg object-cover" />
+                            <div class="ml-3">
+                                <a href="#" class="text-sm text-gray-700 hover:text-blue-600 md:text-base">Seminar Nasional Kebangsaan</a>
+                                <p class="text-xs text-gray-500 md:text-sm">5 Oktober 2023</p>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Keilmuan</h3>
-                        <p class="mt-3 text-sm text-gray-600">Mengembangkan tradisi intelektual dan penelitian berbasis nilai-nilai Islam dan kebangsaan untuk kemajuan masyarakat.</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="relative flex h-screen items-center bg-cover bg-fixed bg-center text-white" style="background-image: url(&quot;src/img/img-2.jpg&quot;)">
-            <div class="absolute inset-0 bg-black opacity-80"></div>
-            <div class="relative container mx-auto px-6 py-16 text-center text-white" data-aos="zoom-in-up">
-                <div class="mb-6 flex items-center justify-center gap-12">
-                    <img src="./src/img/logo-pk-pmii-atp.jpg" alt="Logo PMII" class="h-16 w-16 transform object-contain transition duration-300 hover:scale-110 md:h-24 md:w-24" />
-                    <span class="text-5xl font-bold">×</span>
-                    <img src="./src/img/logo_amik.png" alt="Logo AMIK" class="h-16 w-16 transform object-contain transition duration-300 hover:scale-110 md:h-24 md:w-24" />
-                </div>
-                <h2 class="font-montserrat mb-4 bg-gradient-to-tr from-blue-400 to-indigo-400 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">Kolaborasi PK PMII & AMIK Taruna Probolinggo</h2>
-                <p class="mx-auto max-w-3xl text-sm leading-relaxed text-gray-300 md:text-base">Pengurus Komisariat Pergerakan Mahasiswa Islam Indonesia (PMII) AMIK Taruna Probolinggo menjalin sinergi erat dalam pengembangan keilmuan dan gerakan sosial. Melalui kolaborasi ini, PMII dan AMIK Taruna berupaya menciptakan kader yang tidak hanya memiliki wawasan akademik yang luas, tetapi juga berkontribusi nyata dalam membangun masyarakat yang lebih berdaya dan berakhlak mulia.</p>
-            </div>
-        </section>
+        </div>
 
         <footer class="bg-gray-100 shadow-sm">
             <div class="mx-auto w-full max-w-screen-xl py-3 md:p-4 md:py-8">
@@ -260,24 +240,5 @@
         <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
         <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
         <script src="src/js/main.js"></script>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                new TypeIt("#typing", {
-                    speed: 100,
-                    startDelay: 500,
-                    loop: true,
-                })
-                    .type("Islam sebagai pedoman.")
-                    .pause(1500)
-                    .delete()
-                    .type("Intelektual untuk kemajuan.")
-                    .pause(1500)
-                    .delete()
-                    .type("Solidaritas tanpa batas.")
-                    .pause(2000)
-                    .go();
-            });
-        </script>
     </body>
 </html>

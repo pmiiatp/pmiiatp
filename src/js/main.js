@@ -4,22 +4,6 @@ AOS.init({
     once: true, // Animasi hanya terjadi sekali
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    new TypeIt("#typing", {
-        speed: 100,
-        startDelay: 500,
-        loop: true,
-    })
-        .type("Islam sebagai pedoman.")
-        .pause(1500)
-        .delete()
-        .type("Intelektual untuk kemajuan.")
-        .pause(1500)
-        .delete()
-        .type("Solidaritas tanpa batas.")
-        .pause(2000)
-        .go();
-});
 
 window.addEventListener("load", function () {
     setTimeout(function () {

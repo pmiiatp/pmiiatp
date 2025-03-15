@@ -38,10 +38,10 @@
                 <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                     <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0">
                         <li>
-                            <a href="index.html" class="nav-active block rounded-sm px-3 py-2 tracking-wider md:p-0" aria-current="page">Beranda</a>
+                            <a href="index.html" class="nav-item block rounded-sm px-3 py-2 tracking-wider md:p-0">Beranda</a>
                         </li>
                         <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex w-full items-center justify-between rounded-sm px-3 py-2 tracking-wider text-gray-900 md:w-auto md:border-0 md:p-0 md:hover:text-blue-800">
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="nav-active flex w-full items-center justify-between rounded-sm px-3 py-2 tracking-wider md:w-auto md:border-0 md:p-0">
                                 Profile
                                 <svg class="ms-2.5 h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
@@ -57,7 +57,7 @@
                                         <a href="visi-misi.html" class="block px-4 py-2 hover:bg-gray-100">Visi & Misi</a>
                                     </li>
                                     <li>
-                                        <a href="sejarah.html" class="block px-4 py-2 hover:bg-gray-100">Sejarah PMII </a>
+                                        <a href="sejarah.html" class="block px-4 py-2 hover:bg-gray-100" aria-current="page">Sejarah PMII </a>
                                     </li>
                                 </ul>
                             </div>
@@ -76,99 +76,80 @@
             </div>
         </nav>
 
-        <section class="bg-blue-50">
-            <div class="container mx-auto">
-                <section class="grid h-screen grid-cols-1 items-center justify-center gap-0 px-5 pt-14 md:grid-cols-2 md:px-20 md:pt-0" style="background-image: url(&quot;src/img/bg.png&quot;)">
-                    <div class="font-montserrat" data-aos="fade-down">
-                        <h2 class="text-base font-bold text-gray-800 md:text-xl">PK PMII AMIK Taruna Probolinggo</h2>
-                        <h1 id="typing" class="mt-2 text-3xl font-bold tracking-wide text-yellow-400 md:text-4xl"></h1>
-                        <p class="mt-4 text-sm text-gray-700 md:text-base">Tanpa kecintaan yang tulus, tak akan lahir semangat juang yang membara. PK PMII Amik Taruna terus melangkah maju bukan hanya karena sekadar janji, tetapi karena adanya dedikasi, loyalitas, dan komitmen yang kuat dari setiap kadernya.</p>
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="./src/img/image.png" alt="Mahasiswa PMII" class="h-[300px] max-w-full md:h-[400px]" data-aos="fade-down" />
-                    </div>
-                </section>
-            </div>
-        </section>
+        <div class="container mx-auto mt-20 px-3 py-14 md:px-6">
+            <section class="py-10 text-center">
+                <h3 class="text-sm font-semibold tracking-wide text-gray-500">SEJARAH PERJALANAN</h3>
+                <h1 class="mt-2 text-3xl font-bold text-blue-900 md:text-4xl">PERGERAKAN MAHASISWA ISLAM INDONESIA</h1>
+            </section>
+            <div class="overflow-hidden rounded-lg bg-white p-8 shadow-lg">
+                <!-- Judul -->
+                <!-- <h2 class="mb-8 text-center text-3xl font-bold text-gray-800">Sejarah PMII</h2> -->
 
-        <section class="bg-gray-50">
-            <div class="container mx-auto py-10 md:py-0">
-                <section class="grid min-h-screen grid-cols-1 items-center justify-center px-5 md:grid-cols-2">
-                    <div class="overflow-hidden rounded-xl shadow-md" data-aos="zoom-in-up">
-                        <img src="./src/img/img-1.jpg" alt="PMII" class="w-full transition-all duration-500 hover:scale-105 hover:shadow-inner" />
+                <!-- Timeline Sejarah -->
+                <div class="space-y-8" data-aos="fade-down">
+                    <!-- Tahun 1960 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-4 text-white">
+                            <span class="text-lg font-bold">1960</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Pendirian PMII</h3>
+                            <p class="text-sm leading-relaxed text-gray-600 md:text-base">PMII didirikan pada tanggal 17 April 1960 di Surabaya sebagai organisasi mahasiswa Islam yang independen. Tujuannya adalah untuk membentuk kader-kader yang berakhlak mulia dan berkontribusi bagi masyarakat.</p>
+                        </div>
                     </div>
-                    <div class="px-0 pt-10 md:px-10 md:pt-0" data-aos="zoom-in-up">
-                        <h2 class="mb-3 text-xl font-bold text-gray-900 md:text-2xl">Pergerakan Mahasiswa Islam Indonesia</h2>
-                        <p class="mb-4 text-justify text-sm text-gray-600">PMII merupakan organisasi gerakan dan kaderisasi yang berlandaskan Islam Ahlussunah waljamaah. Berdiri sejak tanggal 17 April 1960 di Surabaya dan hingga lebih dari setengah abad ini PMII terus eksis untuk memberikan kontribusi bagi kemajuan bangsa dan negara.</p>
 
-                        <div class="mb-4 flex items-start gap-3">
-                            <div class="flex h-10 items-center justify-center rounded-full bg-blue-800 p-3 text-white">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-800">Tujuan PMII</h3>
-                                <p class="text-justify text-sm text-gray-600">Terbentuknya pribadi muslim Indonesia yang bertakwa kepada Allah Swt. Berakhlak, berilmu, cakap, dan bertanggung jawab dalam mengamalkan ilmunya serta komitmen memperjuangkan cita-cita kemerdekaan Indonesia.</p>
-                            </div>
+                    <!-- Tahun 1970 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-green-600 p-4 text-white">
+                            <span class="text-lg font-bold">1970</span>
                         </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Ekspansi Nasional</h3>
+                            <p class="leadin md:text-baseg-relaxed text-sm text-gray-600">Pada tahun 1970-an, PMII mulai memperluas jangkauannya ke seluruh Indonesia dengan mendirikan cabang-cabang di berbagai universitas dan perguruan tinggi.</p>
+                        </div>
+                    </div>
 
-                        <!-- Kolaborasi PMII -->
-                        <div class="flex items-start gap-3">
-                            <div class="flex h-10 items-center justify-center rounded-full bg-blue-800 p-3 text-white">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-800">Kolaborasi PMII</h3>
-                                <p class="text-justify text-sm text-gray-600">PMII AMK Tanura Probolinggo berkomitmen membangun sinergi dalam pengembangan keilmuan dan gerakan sosial. Melalui kolaborasi, kami mencetak kader unggul yang siap mengabdi.</p>
-                            </div>
+                    <!-- Tahun 1990 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-purple-600 p-4 text-white">
+                            <span class="text-lg font-bold">1990</span>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Reformasi Internal</h3>
+                            <p class="text-sm leading-relaxed text-gray-600 md:text-base">PMII melakukan reformasi internal untuk memperkuat struktur organisasi dan meningkatkan kualitas kaderisasi. Fokusnya adalah pada pengembangan keilmuan dan sosial.</p>
                         </div>
                     </div>
-                </section>
-            </div>
-        </section>
 
-        <section class="my-10 bg-gradient-to-tr from-blue-600 to-indigo-800">
-            <div class="container mx-auto py-10">
-                <div class="grid grid-cols-1 gap-6 px-5 md:grid-cols-3">
-                    <!-- 1 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-person-walking text-2xl"></i>
+                    <!-- Tahun 2000 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-yellow-600 p-4 text-white">
+                            <span class="text-lg font-bold">2000</span>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Pergerakan</h3>
-                        <p class="mt-3 text-sm text-gray-600">Keadilan, Kemajuan, Kemanusiaan: Landasan Perjuangan PK PMII ATP Menuju Masa Depan yang Berkeadilan.</p>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Kolaborasi Global</h3>
+                            <p class="leadin md:text-baseg-relaxed text-sm text-gray-600">PMII mulai menjalin kerjasama dengan organisasi mahasiswa internasional untuk memperluas wawasan dan kontribusi kader-kadernya di tingkat global.</p>
+                        </div>
                     </div>
-                    <!-- 2 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-person-lines-fill text-2xl"></i>
+
+                    <!-- Tahun 2020 -->
+                    <div class="flex items-start space-x-6">
+                        <div class="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 p-4 text-white">
+                            <span class="text-lg font-bold">2020</span>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Kaderisasi</h3>
-                        <p class="mt-3 text-sm text-gray-600">Membangun generasi muda yang berintegritas, berakhlak, dan memiliki wawasan kebangsaan demi kemajuan umat.</p>
-                    </div>
-                    <!-- 3 -->
-                    <div class="max-w-md rounded-xl bg-white p-6 text-center shadow-md" data-aos="fade-up">
-                        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-200">
-                            <i class="bi bi-book text-2xl"></i>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold text-gray-800">Era Digital</h3>
+                            <p class="leadin md:text-baseg-relaxed text-sm text-gray-600">PMII memasuki era digital dengan memanfaatkan teknologi untuk meningkatkan kualitas kaderisasi dan memperluas jaringan organisasi.</p>
                         </div>
-                        <h3 class="text-lg font-semibold tracking-widest text-gray-900">Keilmuan</h3>
-                        <p class="mt-3 text-sm text-gray-600">Mengembangkan tradisi intelektual dan penelitian berbasis nilai-nilai Islam dan kebangsaan untuk kemajuan masyarakat.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="relative flex h-screen items-center bg-cover bg-fixed bg-center text-white" style="background-image: url(&quot;src/img/img-2.jpg&quot;)">
-            <div class="absolute inset-0 bg-black opacity-80"></div>
-            <div class="relative container mx-auto px-6 py-16 text-center text-white" data-aos="zoom-in-up">
-                <div class="mb-6 flex items-center justify-center gap-12">
-                    <img src="./src/img/logo-pk-pmii-atp.jpg" alt="Logo PMII" class="h-16 w-16 transform object-contain transition duration-300 hover:scale-110 md:h-24 md:w-24" />
-                    <span class="text-5xl font-bold">×</span>
-                    <img src="./src/img/logo_amik.png" alt="Logo AMIK" class="h-16 w-16 transform object-contain transition duration-300 hover:scale-110 md:h-24 md:w-24" />
+                <!-- Quote atau Pesan Inspiratif -->
+                <div class="mt-12 text-center">
+                    <p class="text-xl text-gray-600 italic">"Mengenal sejarah adalah langkah pertama untuk membangun masa depan yang lebih baik."</p>
+                    <p class="mt-2 text-sm text-gray-500">- PK PMII AMIK Taruna Probolinggo -</p>
                 </div>
-                <h2 class="font-montserrat mb-4 bg-gradient-to-tr from-blue-400 to-indigo-400 bg-clip-text text-2xl font-extrabold text-transparent md:text-4xl">Kolaborasi PK PMII & AMIK Taruna Probolinggo</h2>
-                <p class="mx-auto max-w-3xl text-sm leading-relaxed text-gray-300 md:text-base">Pengurus Komisariat Pergerakan Mahasiswa Islam Indonesia (PMII) AMIK Taruna Probolinggo menjalin sinergi erat dalam pengembangan keilmuan dan gerakan sosial. Melalui kolaborasi ini, PMII dan AMIK Taruna berupaya menciptakan kader yang tidak hanya memiliki wawasan akademik yang luas, tetapi juga berkontribusi nyata dalam membangun masyarakat yang lebih berdaya dan berakhlak mulia.</p>
             </div>
-        </section>
+        </div>
 
         <footer class="bg-gray-100 shadow-sm">
             <div class="mx-auto w-full max-w-screen-xl py-3 md:p-4 md:py-8">
@@ -260,24 +241,5 @@
         <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
         <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
         <script src="src/js/main.js"></script>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                new TypeIt("#typing", {
-                    speed: 100,
-                    startDelay: 500,
-                    loop: true,
-                })
-                    .type("Islam sebagai pedoman.")
-                    .pause(1500)
-                    .delete()
-                    .type("Intelektual untuk kemajuan.")
-                    .pause(1500)
-                    .delete()
-                    .type("Solidaritas tanpa batas.")
-                    .pause(2000)
-                    .go();
-            });
-        </script>
     </body>
 </html>
